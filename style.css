@@ -42,6 +42,11 @@ nav {
   height: 13vh;
   width: 100%;
   margin: auto;
+  overflow: hidden;
+}
+
+.logo-div {
+  flex: 1 1 0;
 }
 
 .logo-div h2 {
@@ -52,13 +57,8 @@ nav {
   font-family: "ITC Avant Garde Gothic Std Bold", sans-serif;
 }
 
-.logo-div {
-  flex: 1 1 0;
-}
-
 .ul-div {
-  flex: 1.4 1 0;
-  margin: 0 5rem;
+  flex: 1.2 1 0;
 }
 
 .ul-div ul {
@@ -99,6 +99,32 @@ nav {
 .footer .copyright .policy p:hover::after {
   transform: scaleX(1);
   transition: all 0.2s ease;
+}
+
+.github{
+  flex: .15 1 0;
+  background-color: white;
+  height: 25vh;
+  transform:translateY(-11%) translateX(56%) rotate(-45deg);
+  display: flex;
+  position: relative;
+}
+
+.github:hover .git-ico{
+  transform: scale(1.15);
+}
+
+.github .git-ico{
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  transition: transform .3s ease-in-out;
+}
+
+.git-ico i{
+  font-size: 3.1rem;
+  transform: rotate(45deg);
+  color: #000000a1;
 }
 
 .icon {
@@ -826,7 +852,7 @@ nav {
 
 /*----------------Endless------------------*/
 
-@media only screen and (min-device-width: 1441px) {
+/* @media only screen and (min-device-width: 1441px) {
   .container {
     display: none;
   }
@@ -862,11 +888,11 @@ nav {
     letter-spacing: -0.1rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-}
+} */
 
 /*---------------- Big TV Screens ------------------*/
 
-@media only screen and (min-device-width: 1381px) and (max-device-width: 1440px) {
+/* @media only screen and (min-device-width: 1381px) and (max-device-width: 1440px) {
   .container {
     display: none;
   }
@@ -900,11 +926,11 @@ nav {
     font-size: 4rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-}
+} */
 
 /*---------------- Large Laptops ------------------*/
 
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1380px) {
+/* @media only screen and (min-device-width: 1025px) and (max-device-width: 1380px) {
   .container {
     display: none;
   }
@@ -938,11 +964,11 @@ nav {
     font-size: 3.5rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-}
+} */
 
 /*---------------- Small Laptops ------------------*/
 
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+/* @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   .container {
     display: none;
   }
@@ -976,11 +1002,11 @@ nav {
     font-size: 3rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-}
+} */
 
 /*---------------- Tablet Devices ------------------*/
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+/* @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .container {
     display: none;
   }
@@ -1014,11 +1040,11 @@ nav {
     font-size: 2.6rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-}
+} */
 
 /* ---------------Mobile Devices----------- */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .container {
     display: none;
   }
@@ -1052,11 +1078,11 @@ nav {
     font-size: 2.3rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-}
+} */
 
 /* ---------------Small Mobile Devices----------- */
 
-@media only screen and (min-device-width: 10px) {
+/* @media only screen and (min-device-width: 10px) {
   .container {
     display: none;
   }
@@ -1090,7 +1116,7 @@ nav {
     font-size: 1.8rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-}
+} */
 
 /* ---------------Own Optimization----------- */
 

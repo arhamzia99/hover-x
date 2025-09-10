@@ -29,6 +29,7 @@ img {
 
 .container{
   background-color: #000000;
+  overflow: hidden;
 }
 
 nav {
@@ -1082,7 +1083,7 @@ nav {
 
 /* ---------------Small Mobile Devices----------- */
 
-/* @media only screen and (min-device-width: 10px) {
+@media only screen and (min-device-width: 10px) {
   .container {
     display: none;
   }
@@ -1116,11 +1117,22 @@ nav {
     font-size: 1.8rem;
     font-family: "TradeGothic LT", sans-serif;
   }
-} */
+}
+
+@media only screen and (min-device-width: 1440px) {
+  .big-box {
+    scale: 1.16;
+  }
+
+  .ul-div {
+    scale: 1.2;
+  }
+  
+}
 
 /* ---------------Own Optimization----------- */
 
-@media only screen and (min-device-width: 1260px) and (max-device-width: 1440px) {
+@media only screen and (min-device-width: 1200px)  {
   .container {
     display: block;
   }
@@ -1130,6 +1142,7 @@ nav {
   }
 }
 
+/*------------------------------------- Scrollbar ---------------------------------------*/
 ::-webkit-scrollbar {
   width: 12px;
   background-color: #000000;
@@ -1161,7 +1174,7 @@ nav {
 }
 
 .main{
-  transform: translateY(7%);
+  transform: translateY(0%);
   animation: black-space 0.5s cubic-bezier(.19,.51,1,.28) 2s forwards;
 }
 
@@ -1220,7 +1233,3 @@ nav {
   }
 }
 
-/* 
-1366
-1260
-*/
